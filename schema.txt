@@ -1,0 +1,67 @@
+Schema for the presentation
+
+0.0 Front
+- Good evening, talk about applying data analytics to my passion: climbing
+- In the beginning tried to create a predictive model in order to guess the expected grade using climber features.
+- Turned out to be not so precise, I'll focus on the exploratory analytics.
+- I will try to answer some questions that normally arrises when you spend a lot of time in the rocks like:
+
+    · How important is your hight-weight rate on the max grade
+    · Is there any difference between women-men mean grade?
+    · What are the most climbed routes worldwide
+    · Where are the best countries to go climbing on Summer-Winter
+
+0. Descript
+- I would like to introduce to you this website: it's called 8a.nu. 
+- Biggest climbing database. It contains the logbooks of the routes climbed by every climber.
+- This database was scraped in 2017 and now it is public, available in Kaggle.
+- It consists in 3 main databases stored in SQLLite: Ascent, Climbers and Grades.
+
+1. Growth
+- Ferst that we see when we start exploring the datbase is the huge growth that has been happening during the last few years.
+- Specially in Spain. Here you have lots of rock, good weather(you can climb all year), good food and safe country.
+Thanks to names like this 2 masters. Chris Sharma was the best climber during the 2000s he went through catalonia region doing the hardest routes known at that time. After him, Adam Ondra took over. Adam spents long periods of time climbing in places like Margalef and Siurana.
+
+and.. what are the best countries to go climbing in Summer-Winter?
+
+2. Season
+- If we look to the number of ascensions by country during winter and summer period we will get some conclusions.
+- Ofc spain is the main location to go climbing in Winter, followed by european areas and USA
+- In summer we can see that the options are more spread out. But still in Europe. I was specially surprised on Poland as a Summer climbing destination. I think I will have to make a visit to Hector next Summer.
+
+and.. how about the most repeated routes?
+
+3. Repeated
+- In this graph we can see the most repeated routes during the years until 2017
+- And here below the most repeated in all times. Here you have DNA and Kastor located in Kalymnos (Greece) and the famous Toma cañonazo located in Rodellar... one of my favorite spots.
+
+and trying to answer more technical questions... this is always the fight between climbers:
+	- You are too tall, you can reach everything really easy
+	- You are too short, you can compress when climbing in overhangs
+	
+... so.. what can we say with the data we have, what is science telling us
+
+4. Hight - Weight
+- As we see here there is a very contraintuitive result: when people gets taller, their mean grade goes down. The shorter, the better.
+- About the weight is clear, more weight harder to lift it.
+- And if we plot the relation between them we get this interesting result: the hight and weight rate increases the mean grade
+
+we can see in this graph that there is a difference between men and women, it seems clear that there is a grade difference between them, but what is the statistics telling us?
+
+5.a M - W 
+- We create the null hypotesis that will be: there are ni dif on the mean grade of men and women.
+- I created a function that does the comparation of the metrics and the result was... efectively there are differences between them.
+
+... ok but I went a little bit further on the analysis: is there a difference for experienced climbers?
+
+5.b M - W
+- In this Case I tested the results for climbers that had spent more than an specific amount of years and this is the result
+- After 11 years climbing you do cannot see diferences between them
+
+... I dont want to leave without saying thanks to David Cohen, the guy who created the scrapper and stored the Databases in Kaggle
+
+6. Greetings
+- Thanks David
+
+7. Questions
+- Questions?
